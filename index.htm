@@ -23,7 +23,7 @@
                     <img src="icons/unknown.png" alt="">
                 </div>
                 <div class="temperature-value">
-                    <p>- °<span>C</span></p>
+                    <p> °<span>C</span></p>
                 </div>
                 <div class="temperature-description">
                     <p> - </p>
@@ -33,36 +33,16 @@
                 </div>
             </div>
 
-<!-- API integration by city -->
+            <!-- API integration by city -->
             <div class="cent2">
             	<div class="text" style="color: white">Which city interests you?</div> <br/>
             	<form>
 	            	<input type='text' placeholder='Enter city name' id='search-place' />
-                       <button id="submit" type='button'><i class="fa fa-search"></i></button>	
+                      <button id="submit" type="button"  onclick="WeatherbyCity(document.getElementById('search-place').value)"><i class="fa fa-search"></i></button>	 
             	</form>
             </div>
-		
-		<!-- Weather info of current location -->
-	    <center>
-            <div class="weather-container">
-                <div class="weather-icon">
-                    <img src="icons/unknown.png" alt="">
-                </div>
-                <div class="temperature-value">
-                    <p>- °<span>C</span></p>
-                </div>
-                <div class="temperature-description">
-                    <p> - </p>
-                </div>
-                <div class="location">
-                    <p>-</p>
-                </div>
-            </div>
-	
-		<div id="tester" style="width:600px;height:250px;border-top: 40px solid black;"></div>
-	
-	</center>
-		
+
+
             <!-- Quote's Box -->
             <div class="box cent">
                 <div class="text">A new perspective...</div>
@@ -80,3 +60,4 @@
         <script src="app.js"></script>
     </body>
 </html>
+
