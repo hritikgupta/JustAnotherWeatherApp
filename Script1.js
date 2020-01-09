@@ -63,4 +63,4 @@ function findWeather(lat, lon) {
     });
 }
 
-// findLocation();
+findLocation();
