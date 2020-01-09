@@ -3,7 +3,7 @@ var count = 0, flag = 1;
 const KELVIN = 273;
 const key = "bc57840cd0ae72f860f57fd888ab5636";
 const weather = {};
-const lat, lon;
+var lat, lon;
 weather.temperature = {
     unit : "celsius"
 }
