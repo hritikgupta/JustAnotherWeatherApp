@@ -136,3 +136,5 @@ function WeatherbyCity(city){
             getWeather(lat, lon);
         });
 }
+var button = select('#submit');
+button.mousePressed(WeatherbyCity(getElementById('search-place')))
