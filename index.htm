@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
         <link rel="stylesheet" type="text/css" href="new.css" />
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -14,20 +16,35 @@
         </head>
     <body>
         <div class="container-class">
-            <div class="ths">
-                <span id="temp"></span><span id="tempunit"></span><span id="desc"></span><br/>
-                <span id="city"></span> <span id="country"></span>            
-            </div>  
 
+            <!-- Weather info of current location -->
+            <div class="weather-container">
+                <div class="weather-icon">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+                <div class="temperature-value">
+                    <p>- °<span>C</span></p>
+                </div>
+                <div class="temperature-description">
+                    <p> - </p>
+                </div>
+                <div class="location">
+                    <p>-</p>
+                </div>
+            </div>
+
+            <!-- API integration by city -->
             <div class="cent2">
             	<div class="text" style="color: white">Which city interests you?</div> <br/>
             	<form>
-	            	<input type='text' placeholder='Enter Place' id='search-place' />
-	      			<button type="submit"><i class="fa fa-search"></i></button>	
+	            	<input type='text' placeholder='Enter city name' id='search-place' />
+                      <button type="submit"><i class="fa fa-search"></i></button>	
+                     
             	</form>
             </div>
 
 
+            <!-- Quote's Box -->
             <div class="box cent">
                 <div class="text">A new perspective...</div>
                     <div>
@@ -38,7 +55,9 @@
                     <button class="btn btn-primary" id="butt"> New Quote </button>
                 </div>
         </div>  
+
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-        <script src="Script1.js"></script>
+        <!--<script src="Script1.js"></script>-->
+        <script src="app.js"></script>
     </body>
 </html>
